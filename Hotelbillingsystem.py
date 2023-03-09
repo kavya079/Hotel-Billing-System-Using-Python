@@ -20,7 +20,7 @@ now=datetime.datetime.now()
 a=now.strftime("%d-%m-%y")
 b=now.strftime("%H:%M:%S")
 #---------------title---------------
-title=Label(wn,text="KVSW CANTEEN",bg="orange",fg="black",font="times 40 bold")#label for name of canteen
+title=Label(wn,text="NK Hotel",bg="orange",fg="black",font="times 40 bold")#label for name of canteen
 title.pack(fill=X)
 #-----------  Generating Bill Reciept -------
 def bill():
@@ -37,7 +37,7 @@ def bill():
         amount=(int(B)*55+int(F)*50+int(E)*45+int(G)*50+int(M)*60+int(P)*40)# calculating total amount
         Tot_items = int(B)+int(F)+int(E)+int(G)+int(M)+int(P)
         textarea.delete(1.0,END)  # deleting the previous inserted text entirely
-        textarea.insert(END,f'\n    \t         KVSW CANTEEN ')
+        textarea.insert(END,f'\n    \t         NK Hotel ')
         textarea.insert(END,"\n")
         textarea.insert(END,f"\nDate :-  {a}	\nTime :-  {b}")
         textarea.insert(END,f"\nCustomer_Name	:-  {u1.get()}")
@@ -106,7 +106,7 @@ u2.place(x=200,y=345)
 f1=Frame(wn,relief=GROOVE,bd=10)  # adding frame to the Tk window
 f1.place(x=900,y=340,width=400,height=350)
 br=Label(f1,text="Bill Receipt",font='arial 15 bold',bg="darkorchid",bd=7,relief=GROOVE).pack(fill=X)
-br2=Label(f1,text="Welcome To KVSW CAFETERIA",font="arial 13 bold").pack()
+br2=Label(f1,text="Welcome To NK Hotel",font="arial 13 bold").pack()
 scrol=Scrollbar(f1,orient=VERTICAL)
 
 #adding Scrollbar to the frame
